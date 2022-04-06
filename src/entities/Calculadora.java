@@ -34,32 +34,38 @@ public class Calculadora {
     }
     public String divide(double numA, double numB) {
         if (this.user.login(this.login, this.senha)) {
-            return "A subtração é: " + (numA / numB);
+            return "A divisão é: " + (numA / numB);
         }else{
             return "O usuário não tem acesso!";
         }
 
     }
-    public String funcao(double numA, double numB, double numX) {
+    public String funcao(double numA, double numX, double numB) {
         if (this.user.login(this.login, this.senha)) {
             return "A função é: " + ((numA * numX) + numB);
         }else{
             return "O usuário não tem acesso!";
         }
-
     }
-    public double potencia(double x, int p) {
-        if(p == 2) {
-            return x * x;
+    public String potencia(double x, int p) {
+        if (this.user.login(this.login, this.senha)) {
+            return "A potencia é: " + Math.pow(x, p);
         }else{
-            double result = 1;
-            int contador = 0;
-            while (contador != p) {
-                result = result * x;
-                contador++;
-            }
-            return result;
+            return "O usuário não tem acesso!";
         }
+//        if(p == 2) {
+//
+//            return  x * x;
+//        }else{
+//            double result = 1;
+//            int contador = 0;
+//            while (contador != p) {
+//                result = result * x;
+//                contador++;
+//            }
+//            System.out.print("A potencia é: ");
+//            return result;
+//
+//        }
     }
-
 }
