@@ -23,18 +23,6 @@ public class Usuario {
         }
     }
 
-    public double soma(double numA, double numB) {
-        return numA + numB;
-    }
-    public double subtrai(double numA, double numB) {
-        return numA - numB;
-    }
-    public double mult(double numA, double numB) {
-        return numA * numB;
-    }
-    public double divide(double numA, double numB) {
-        return numA / numB;
-    }
 
     public String getNome() {
         return nome;
