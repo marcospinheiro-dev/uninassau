@@ -1,4 +1,4 @@
-package entities;
+package usuario.entities;
 
 public class Calculadora {
     private Usuario user;

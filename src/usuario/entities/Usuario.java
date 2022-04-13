@@ -1,4 +1,4 @@
-package entities;
+package usuario.entities;
 
 public class Usuario {
 

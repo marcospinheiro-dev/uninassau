@@ -1,11 +1,11 @@
-package application;
+package usuario.application;
 
-import entities.Calculadora;
-import entities.Usuario;
+import usuario.entities.Calculadora;
+import usuario.entities.Usuario;
 
 import java.util.Locale;
 
-public class App {
+public class AppUsuario {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Usuario user = new Usuario("José", "ze", "123456");
